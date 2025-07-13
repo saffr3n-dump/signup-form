@@ -4,7 +4,7 @@
 
 ## Overview
 
-This is my solution for the [Project: Sign-Up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form) assignment in [The Odin Project](https://www.theodinproject.com) [Intermediate HTML anc CSS](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css) curriculum.
+This is my solution for the [Project: Sign-Up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form) assignment in [The Odin Project](https://www.theodinproject.com) [Intermediate HTML and CSS](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css) curriculum.
 
 ## Installation
 
