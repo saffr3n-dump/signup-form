@@ -13,8 +13,10 @@ body {
 }
 
 .side {
+  --text-color: white;
+
   background: no-repeat url('./assets/bg.jpg') center / cover;
-  color: white;
+  color: var(--text-color);
   min-width: max-content;
   max-width: 550px;
   flex: 3;
@@ -22,7 +24,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  .logo {
+  & .logo {
     background: rgb(0, 0, 0, 0.5);
     font-family: Norse-Bold;
     font-size: 6rem;
@@ -32,22 +34,111 @@ body {
     justify-content: center;
     align-items: center;
 
-    img {
+    & img {
       height: 8rem;
     }
   }
 
-  .credit {
+  & .credit {
     font-size: 0.8rem;
     text-align: center;
     padding: 1rem;
 
-    a {
-      color: white;
+    & a {
+      color: var(--text-color);
     }
   }
 }
 
 .content {
   flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+
+  & > * {
+    padding: 2rem;
+    flex: 1;
+  }
+
+  & > :nth-child(2n + 1) {
+    background-color: rgb(245, 255, 245);
+  }
+
+  & .top {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2rem;
+  }
+
+  & .mid {
+    & div {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: -0.05rem;
+      margin-bottom: 2rem;
+    }
+
+    & form {
+      & fieldset {
+        border: none;
+        display: flex;
+        gap: 2rem;
+
+        & label {
+          font-size: 0.9rem;
+          font-weight: bold;
+          font-variant: small-caps;
+          color: #333;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+
+          & input {
+            outline: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: inherit;
+            padding: 0.1rem 0.5rem;
+
+            &:invalid {
+              border-color: red;
+            }
+
+            &:focus {
+              box-shadow: 2px 2px 2px 0 #ddd;
+              border-color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bot {
+    box-shadow: inset 0 4px 4px 0 #ddd;
+
+    & button {
+      background-color: #596d48;
+      padding: 1rem 3rem;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    & a {
+      color: #596d48;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
 }

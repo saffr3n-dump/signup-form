@@ -24,32 +24,38 @@
         <div>You <em>know</em> you want to.</div>
       </div>
       <div class="mid">
-        <h1>Let's do this!</h1>
-        <form action="#" id="form">
-          <label for="firstName">
-            FIRST NAME
-            <input type="text" name="firstName" id="firstName">
-          </label>
-          <label for="lastName">
-            LAST NAME
-            <input type="text" name="lastName" id="lastName">
-          </label>
-          <label for="email">
-            EMAIL
-            <input type="email" name="email" id="email">
-          </label>
-          <label for="phone">
-            PHONE NUMBER
-            <input type="tel" name="phone" id="phone">
-          </label>
-          <label for="password">
-            PASSWORD
-            <input type="password" name="password" id="password">
-          </label>
-          <label for="confirm">
-            CONFIRM PASSWORD
-            <input type="password" name="confirm" id="confirm">
-          </label>
+        <div>Let's do this!</div>
+        <form action="#" method="post" id="form">
+          <fieldset>
+            <label for="firstName">
+              first name
+              <input type="text" name="firstName" id="firstName">
+            </label>
+            <label for="lastName">
+              last name
+              <input type="text" name="lastName" id="lastName">
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="email">
+              email
+              <input type="email" name="email" id="email">
+            </label>
+            <label for="phone">
+              phone number
+              <input type="tel" name="phone" id="phone">
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="password">
+              password
+              <input type="password" name="password" id="password" required>
+            </label>
+            <label for="confirm">
+              confirm password
+              <input type="password" name="confirm" id="confirm" required>
+            </label>
+          </fieldset>
         </form>
       </div>
       <div class="bot">
